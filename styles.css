@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 20px;
+}
+.container {
+  width: 70%;
+  display: flex;
+  background-color: pink;
+  margin: 10rem auto;
+  min-width: 400px;
+}
+h1 {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+p {
+  line-height: 1.5;
+  width: 70%;
+  margin-bottom: 4rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.one {
+  padding: 2rem;
+  background-color: hsl(31, 77%, 52%);
+}
+.two {
+  padding: 2rem;
+  background-color: hsl(184, 100%, 22%);
+}
+.two p {
+  width: 80%;
+}
+.three {
+  padding: 2rem;
+  background-color: hsl(179, 100%, 13%);
+}
+.three p {
+  width: 80%;
+}
+button {
+  padding: 0.5rem;
+  border-radius: 20px;
+  width: 100px;
+  border: none;
+  background-color: hsl(0, 0%, 95%);
+}
+button:hover {
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid hsla(0, 0%, 100%, 0.75);
+}
+.one button {
+  color: hsl(31, 77%, 52%);
+}
+.one button:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.two button {
+  color: hsl(184, 100%, 22%);
+}
+.two button:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.three button {
+  color: hsl(179, 100%, 13%);
+}
+.three button:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+@media (max-width: 1100px) {
+  p {
+    width: 100%;
+  }
+  .two p {
+    width: 100%;
+  }
+  .three p {
+    width: 110%;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    width: 80%;
+    margin-top: 5rem;
+    min-width: 300px;
+  }
+  p {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+  }
+  .two p {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+  }
+  .three p {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+  }
+  section {
+    text-align: center;
+  }
+}
